@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name></display-name>
+  <welcome-file-list>
+   <welcome-file>login.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <!-- 过滤器解决中文乱码 -->
+  <filter>
+    <filter-name>CharaterEncodingFilter</filter-name>
+    <filter-class>com.hy.cxp.supermarket.filter.CharacterEncodingFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>utf-8</param-value>
+    </init-param>
+  </filter>
+  <filter-mapping>
+    <filter-name>CharaterEncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  <!-- 登录验证 -->
+  <filter>
+    <filter-name>SercurityFilter</filter-name>
+    <filter-class>com.hy.cxp.supermarket.filter.SercurityFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>SercurityFilter</filter-name>
+    <url-pattern>/security/*</url-pattern>
+  </filter-mapping>
+  
+  <!-- servlet控制器 -->
+  <servlet>
+    <servlet-name>Controller</servlet-name>
+    <servlet-class>com.hy.cxp.supermarket.controller.ControllerServlet</servlet-class>
+  </servlet>
+<!-- 功能性servlet -->
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UsersServlet</servlet-name>
+    <servlet-class>com.hy.cxp.supermarket.servlet.UsersServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrdersServlet</servlet-name>
+    <servlet-class>com.hy.cxp.supermarket.servlet.OrdersServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SuppliersServlet</servlet-name>
+    <servlet-class>com.hy.cxp.supermarket.servlet.SuppliersServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GoodsServlet</servlet-name>
+    <servlet-class>com.hy.cxp.supermarket.servlet.GoodsServlet</servlet-class>
+  </servlet>
+
+
+  <servlet-mapping>
+    <servlet-name>Controller</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UsersServlet</servlet-name>
+    <url-pattern>/servlet/UsersServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrdersServlet</servlet-name>
+    <url-pattern>/servlet/OrdersServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SuppliersServlet</servlet-name>
+    <url-pattern>/servlet/SuppliersServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GoodsServlet</servlet-name>
+    <url-pattern>/servlet/GoodsServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

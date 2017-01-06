@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.j2eedt.core.MYECLIPSE_JAVAEE_6_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="G:/Additional Library/json-lib所需全部jar包/lib/commons-beanutils-1.7.0.jar"/>
+	<classpathentry kind="lib" path="G:/Additional Library/json-lib所需全部jar包/lib/commons-collections-3.2.jar"/>
+	<classpathentry kind="lib" path="G:/Additional Library/json-lib所需全部jar包/lib/commons-lang-2.4.jar"/>
+	<classpathentry kind="lib" path="G:/Additional Library/json-lib所需全部jar包/lib/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="G:/Additional Library/json-lib所需全部jar包/lib/ezmorph-1.0.4.jar"/>
+	<classpathentry kind="lib" path="G:/Additional Library/json-lib所需全部jar包/lib/json-lib-2.2.3-jdk13.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/Sun JDK 1.6.0_13"/>
+	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
+</classpath>

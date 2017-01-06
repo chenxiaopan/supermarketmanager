@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="supermarketmanager1115">
+        <wb-resource deploy-path="/" source-path="/WebRoot"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <property name="java-output-path" value="/supermarketmanager1115/WebRoot/WEB-INF/classes"/>
+        <property name="context-root" value="/supermarketmanager1115"/>
+    </wb-module>
+</project-modules>
