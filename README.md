@@ -7,3 +7,9 @@
 5.账单管理可进行按多个条件的查询。<br/>
 6.订单添加页面使用了ajax进行异步请求，根据选择的商品名称 对应的供应商。并根据提供商和商品名返回唯一的商品信息，利用js进行自动填写。<br/>
 7.基本的登录验证功能和密码修改功能，并使用js进行友好提示。<br/>
+
+![image](https://github.com/chenxiaopan/supermarketmanager/raw/master/screenshots/supermarketmanager1.jpg)
+
+![image](https://github.com/chenxiaopan/supermarketmanager/raw/master/screenshots/supermarketmanager2.jpg)
+
+![image](https://github.com/chenxiaopan/supermarketmanager/raw/master/screenshots/supermarketmanager3.jpg)
